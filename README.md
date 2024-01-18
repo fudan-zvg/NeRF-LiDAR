@@ -32,12 +32,12 @@ Our NeRF-LiDAR can generate realistic point clouds that is nearly the same as th
 </p>
 
 
-## Bibtex
-```
+## BibTex
+```bibtex
 @inproceedings{zhang2023nerf,
   title={NeRF-LiDAR: Generating Realistic LiDAR Point Clouds with Neural Radiance Fields},
   author={Zhang, Junge and Zhang, Feihu and Kuang, Shaochen and Zhang, Li},
-  booktitle={Association for the Advancement of Artificial Intelligence (AAAI)},
+  booktitle={AAAI Conference on Artificial Intelligence (AAAI)},
   year={2024}
 }
 ```
