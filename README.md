@@ -1,7 +1,7 @@
 # NeRF-LiDAR: Generating Realistic LiDAR Point Clouds with Neural Radiance Fields
 ### [[Paper]](https://arxiv.org/abs/2304.14811) 
 > [**NeRF-LiDAR: Generating Realistic LiDAR Point Clouds with Neural Radiance Fields**](https://arxiv.org/abs/2304.14811),            
-> Junge Zhang, Feihu Zhang, Shaochen kuang, [Li Zhang](https://lzrobots.github.io)  
+> Junge Zhang, Feihu Zhang, Shaochen Kuang, [Li Zhang](https://lzrobots.github.io)  
 > **AAAI 2024**
 
 **Official implementation for NeRF-LiDAR: Generating Realistic LiDAR Point Clouds with Neural Radiance Fields**
