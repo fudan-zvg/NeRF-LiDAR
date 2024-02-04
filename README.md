@@ -40,10 +40,10 @@ Coming soon.
 2. NeRF Reconstruction
 ```
 #training
-./scripts/run/train_nusc.sh 4 version39 0213_front nuscenes_single.gin
+./scripts/run/train_nusc.sh 4 version0 0213_front nuscenes_single.gin
 
 #rendering
-./scripts/run/render_video_nusc.sh 1 version39 0213_front nuscenes_single.gin
+./scripts/run/render_video_nusc.sh 4 version0 0213_front nuscenes_single.gin
 
 ```
 3. Ray drop learning
@@ -51,13 +51,13 @@ Coming soon.
 #training
 EXP=$1
 SRC=$2
-python src/transfer_lidar_data.py --expname $EXP --dvgo --ray_drop $SRC --vgg --vgg_weights 0.2 --mix_train --batch_size 8 --roll
+python src/transfer_lidar_data.py --expname $EXP --ray_drop $SRC --vgg --vgg_weights 0.2 --mix_train --batch_size 8 --roll
 ```
 
 ## TODO
 
 - [x] Code release.
-- [ ] Scripts for data preprocessing
+- [ ] Scripts for data preprocessing.
 - [ ] Scripts for visualization.
 ## BibTex
 ```bibtex
