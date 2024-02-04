@@ -32,6 +32,33 @@ Our NeRF-LiDAR can generate realistic point clouds that is nearly the same as th
 </p>
 
 
+## Scripts
+1. Data preprocessing
+```
+Coming soon.
+```
+2. NeRF Reconstruction
+```
+#training
+./scripts/run/train_nusc.sh 4 version39 0213_front nuscenes_single.gin
+
+#rendering
+./scripts/run/render_video_nusc.sh 1 version39 0213_front nuscenes_single.gin
+
+```
+3. Ray drop learning
+```
+#training
+EXP=$1
+SRC=$2
+python src/transfer_lidar_data.py --expname $EXP --dvgo --ray_drop $SRC --vgg --vgg_weights 0.2 --mix_train --batch_size 8 --roll
+```
+
+## TODO
+
+- [x] Code release.
+- [ ] Scripts for data preprocessing
+- [ ] Scripts for visualization.
 ## BibTex
 ```bibtex
 @inproceedings{zhang2023nerf,

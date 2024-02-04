@@ -1,0 +1,1 @@
+{"bilinear": true, "regression": true, "val_percent": 0.1, "transform": true, "mask_loss": 1, "early_stop": false, "delta": false}

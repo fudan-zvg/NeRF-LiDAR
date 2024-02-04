@@ -1,0 +1,45 @@
+Config.exp_name = 'test3'
+Config.dataset_loader = 'nusc'
+Config.near = 0.1
+Config.far = 10
+Config.factor = 1
+Config.start_step = 0
+Config.end_step = 5000
+Config.learn_R=True
+Config.learn_t=False
+
+Config.lidar_supervision = True
+Config.lidar_batch_ratio = 4
+Config.patch_size = 32
+Config.llff_use_all_images_for_training = True
+Config.sensor_num=6
+Config.instance_obj = True
+Config.no_sem_layer = False
+Config.use_semantic = True
+Config.semantic_dilate = True # for shadow
+
+Config.latent_size = 128
+Config.track_refine = True
+Config.track_start_opt = 5000
+Config.latent_reg=0.01
+# Config.lidar_supervision = True
+Config.obj_nodecay=True
+
+Model.raydist_fn = 'power_transformation'
+Model.opaque_background = True
+
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+PropMLP.grid_level_dim = 1
+
+NerfMLP.disable_density_normals = True
+
+ObjMLP.disable_rgb = False
+ObjMLP.grid_disired_resolution=1024
+ObjMLP.density_init = True # apply density_init
+ObjMLP.disable_density_normals = True
+ObjMLP.obj_mode= False
+ObjMLP.bottleneck_width = 64
+ObjMLP.grid_level_dim = 2
+ObjMLP.net_width_viewdirs = 32
+ObjMLP.split_latent = True
