@@ -39,6 +39,7 @@ Coming soon.
 ```
 2. NeRF Reconstruction
 ```
+DATA_ROOT='...' # path of data source
 #training
 ./scripts/run/train_nusc.sh 4 version0 0213_front nuscenes_single.gin
 
